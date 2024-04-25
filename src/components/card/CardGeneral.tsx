@@ -8,13 +8,12 @@ interface CardGeneralProps {
 
 const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description, buttonText }) => {
     return (
-        <div className="h-[600px] min-w-[328px] relative">
+        <div className="h-[500px] min-w-[328px] relative">
             <img
                 src={imageUrl}
                 alt=""
                 className="relative rounded-2xl object-cover w-full h-full"
             />
-
             <div className="absolute bottom-[21px] left-0 right-0 grid gap-[16px] items-center justify-center text-center  ">
                 <div className="">
                     <h1 className="text-[35px] font-bold font-[Cinzel] text-[#D5E11D]">
