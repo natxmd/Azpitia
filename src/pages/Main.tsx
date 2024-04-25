@@ -2,7 +2,7 @@ import SwiperHero from "../components/swipers/SwiperHero"
 
 const Main = () => {
     return (
-        <div>
+        <div className="bg-WhiteA">
 
             <section id="Hero">
                 <SwiperHero />
