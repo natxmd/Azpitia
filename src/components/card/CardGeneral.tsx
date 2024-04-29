@@ -1,37 +1,37 @@
+import BtnGO from "../buttons/BtnGo";
 
 interface CardGeneralProps {
     imageUrl: string;
     title: string;
     description: string;
-    buttonText: string;
 }
 
-const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description, buttonText }) => {
+const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description }) => {
     return (
-        <div className="h-[600px] min-w-[328px] relative">
-            <img
-                src={imageUrl}
-                alt=""
-                className="relative rounded-2xl object-cover w-full h-full"
-            />
-
-            <div className="absolute bottom-[21px] left-0 right-0 grid gap-[16px] items-center justify-center text-center  ">
-                <div className="">
-                    <h1 className="text-[35px] font-bold font-[Cinzel] text-[#D5E11D]">
+        <div className="h-[500px]  relative">
+            <div
+                className="absolute inset-0 bg-cover bg-[60%] rounded-2xl"
+                style={{backgroundImage: `url(${imageUrl})`}}
+            >
+            </div>
+            <div className="absolute inset-0 bg-black opacity-30 rounded-2xl"></div>
+            <div 
+                className="absolute  flex flex-col  items-center justify-center text-center
+                bottom-[21px] left-0 right-0  gap-[16px] sm:gap-[40px]">
+                <div className="grid gap-[16px]">
+                    <h1>
                         {title}
                     </h1>
-                    <p className="text-white font-normal font-[Roboto Flex] text-[15px] text-center">
+                    <p className="text-white font-semibold font-RobotoFlex text-[15px] px-[34px] leading-[19px] 
+                        sm:text-[20px] sm:leading-[20px] sm:font-medium sm:px-0
+                        lg:text-[30px]">
                         {description}
                     </p>
                 </div>
-                <button
-                    className="max-w-[146px] h-[48px] rounded-[16px] mx-auto px-[28px]
-                    bg-[#1A4D3E] text-[#D5E11D] border-2 border-[#D5E11D]">
-                    {buttonText}
-                </button>
+                <BtnGO />
             </div>
-
         </div>
+
     );
 }
 

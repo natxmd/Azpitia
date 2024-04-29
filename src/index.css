@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+    @apply text-[35px] font-bold font-[Cinzel] text-YellowA leading-[36px]  sm:text-[38px] sm:leading-[50px] md:px-0 lg:text-[50px]
+}
+
+h2 {
+    @apply text-[35px] text-center font-bold font-[Cinzel] text-DarkGreenA leading-[36px] sm:text-[38px] sm:leading-[60px] lg:text-[50px]
+}
+
+@layer utilities {
+    .containerGeneral {
+        @apply grid gap-[9px] items-center px-[16px] py-[19px] md:gap-[40px] sm:px-[25px]
+    }
+
+}

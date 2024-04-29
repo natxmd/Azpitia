@@ -13,6 +13,9 @@ export default {
         "DarkGreenA": '#1A4D3E',
         "LightGreenA": '#C1F0A4',
       },
+      fontFamily: {
+        'RobotoFlex': 'Roboto Flex',
+      },
     },
   },
   plugins: [],
