@@ -8,7 +8,7 @@ const Navbar = () => {
             <nav className='containerNav flex items-center justify-between'>
                 <img
                     alt="Logo Footer"
-                    src="/icons/LogoHeader.svg"
+                    src="/icons/logoHeader.svg"
                     className="mx-auto"
                 />
             </nav>

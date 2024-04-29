@@ -18,7 +18,7 @@ const Footer = () => {
                     md:gap-[px] md:grid-cols-3">
                     <img
                         alt="Logo Footer"
-                        src="/icons/LogoFooter.svg"
+                        src="/icons/logoFooter.svg"
                         className="w-[118px] sm:w-[125px] lg:w-[154px]"
                     />
                     <div
