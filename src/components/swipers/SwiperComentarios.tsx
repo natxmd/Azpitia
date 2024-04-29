@@ -53,14 +53,10 @@ export default function SwiperComentarios() {
                         centeredSlides: true
                     },
                 }}
-                autoplay={{
-                    delay: 2500,
-                    disableOnInteraction: false,
-                }}
                 modules={[Autoplay, Pagination]}
                 loop={true}
                 centeredSlides={true}
-                className="containerGeneral">
+                className="grid items-center py-[19px]">
                 <SwiperSlide>
                     <CardComentarios
                         name= 'Ronald'

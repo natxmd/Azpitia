@@ -15,7 +15,7 @@ const Footer = () => {
                 <div 
                     className="py-[48px] grid justify-items-center items-center place-content-center
                     gap-[20px] 
-                    md:gap-[px] md:grid-cols-3">
+                    md:flex md:justify-between">
                     <img
                         alt="Logo Footer"
                         src="/icons/logoFooter.svg"

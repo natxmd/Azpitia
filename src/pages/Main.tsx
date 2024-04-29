@@ -1,21 +1,26 @@
 import CardGeneral from "../components/card/CardGeneral"
 import SwiperHero from "../components/swipers/SwiperHero"
 import CardVideo from "../components/card/CardVideo";
-import { useMediaQuery } from "react-responsive";
 import SwiperComentarios from "../components/swipers/SwiperComentarios";
 
 const Main = () => {
 
-    const isSm = useMediaQuery({ query: '(min-width: 720px)' })
-
 
     return (
-        <div className="bg-WhiteA  pt-[50px] sm:pt-[88px] lg:pt-[100px]">
+        <div className="bg-WhiteA  pt-[50px] sm:pt-[0px]">
             <section id="Hero">
                 <SwiperHero />
             </section>
 
             <section id="Comentarios">
+                <div className="text-center grid gap-[16px] md:gap-[20px] md:pb-[20px]">
+                    <h2>reseñas</h2>
+                    <p className="text-[#181D15] font-light font-RobotoFlex text-[15px] px-[34px] leading-[19px] 
+                        sm:text-[20px] sm:leading-[20px] sm:font-normal
+                        lg:text-[30px]">
+                        Lee los comentarios de nuestros visitantes.
+                    </p>
+                </div>
                 <SwiperComentarios />
             </section>
 
@@ -48,26 +53,22 @@ const Main = () => {
                 </div>
             </section>
 
-            {
-                isSm ?
-                    <section id="Casas">
-                        <div className="containerGeneral">
-                            <h2>nuestras casas</h2>
-                            <div className="grid items-center justify-center gap-[40px]">
-                                <CardVideo
-                                    link="https://www.youtube.com/embed/yRFWBwCnhqY"
-                                    title="Casa Mural 2024"
-                                />
-                                <CardVideo
-                                    link="https://www.youtube.com/embed/NCcFUi2Q5bQ"
-                                    title="Casa Santorini 2024"
-                                />
-                            </div>
-                        </div>
-                    </section>
-                    :
-                    null
-            }
+            <section id="Casas">
+                <div className="containerGeneral">
+                    <h2>nuestras casas</h2>
+                    <div className="w-full grid gap-[40px]">
+                        <CardVideo
+                            link="https://www.youtube.com/embed/yRFWBwCnhqY"
+                            title="Casa Mural 2024"
+                        />
+                        <CardVideo
+                            link="https://www.youtube.com/embed/NCcFUi2Q5bQ"
+                            title="Casa Santorini 2024"
+                        />
+                    </div>
+                </div>
+            </section>
+
         </div>
     )
 }

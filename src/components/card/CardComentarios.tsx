@@ -12,7 +12,7 @@ interface props {
 const CardComentarios: React.FC<props> = ({ name, rating, comment, location, date, image }) => {
 
    return (
-      <div className="bg-white rounded-[12px] shadow-md w-[344px] h-[360px] pt-[30px] px-[32px] pb-[20px]">
+      <div className="bg-white rounded-[12px] shadow-md  max-w-[344px] w-full h-[360px] pt-[30px] px-[32px] pb-[20px]">
          <div className='flex flex-col justify-between h-full'>
             <div className='grid gap-[16px]'>
                <div className="flex items-center gap-[20px]">
@@ -21,11 +21,11 @@ const CardComentarios: React.FC<props> = ({ name, rating, comment, location, dat
                      alt={name}
                      className="w-[100px] rounded-full"
                   />
-                  <div className='grid ga'>
+                  <div className='grid font-RobotoFlex'>
                      <h3 className="text-xl font-semibold">
                         {name}
                      </h3>
-                     <p className="text-[#181D15]">
+                     <p className="text-[#181D15] font-RobotoFlex">
                         {location}
                      </p>
                   </div>

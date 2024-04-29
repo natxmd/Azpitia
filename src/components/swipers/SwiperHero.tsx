@@ -1,7 +1,6 @@
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Autoplay, Pagination } from 'swiper/modules';
 import CardGeneral from '../card/CardGeneral';
 
 export default function SwiperHero() {
@@ -12,11 +11,6 @@ export default function SwiperHero() {
             slidesPerView={1}
             spaceBetween={30}
             loop={true}
-            autoplay={{
-               delay: 2500,
-               disableOnInteraction: false,
-            }}
-            modules={[Autoplay, Pagination]}
             className="containerGeneral">
             <SwiperSlide>
                <CardGeneral
