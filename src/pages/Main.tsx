@@ -8,7 +8,7 @@ const Main = () => {
                 <SwiperHero />
             </section>
 
-            <section id="Reseñas">
+            <section id="Comentarios">
 
             </section>
 
