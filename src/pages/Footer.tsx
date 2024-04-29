@@ -12,12 +12,14 @@ const Footer = () => {
     return (
         <footer className="bg-DarkGreenA">
             <div className="mx-auto w-[90%] max-w-[1184px] xl:w-full">
-                <div className="py-[48px]">
+                <div 
+                    className="py-[48px] grid justify-items-center items-center place-content-center
+                    gap-[20px] 
+                    md:gap-[px] md:grid-cols-3">
                     <img
                         alt="Logo Footer"
-                        src="/icons/logoFooter.svg"
-                        className="mx-auto
-                        w-[118px] sm:w-[158px]"
+                        src="/icons/LogoFooter.svg"
+                        className="w-[118px] sm:w-[125px] lg:w-[154px]"
                     />
                     <div
                         className="grid gap-[16px] sm:gap-[20px]">

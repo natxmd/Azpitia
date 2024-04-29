@@ -1,7 +1,6 @@
 import React from 'react';
 
-interface Review {
-   id: number;
+interface props {
    name: string;
    rating: number;
    comment: string;
@@ -10,50 +9,55 @@ interface Review {
    image: string;
 }
 
-const CardComentarios: React.FC<{ review: Review }> = ({ review }) => {
+const CardComentarios: React.FC<props> = ({ name, rating, comment, location, date, image }) => {
 
    return (
-      <div className="bg-white rounded-[12px] shadow-md w-[344px] h-[344px] pt-[46px] px-[32px] pb-[20px]">
+      <div className="bg-white rounded-[12px] shadow-md w-[344px] h-[360px] pt-[30px] px-[32px] pb-[20px]">
          <div className='flex flex-col justify-between h-full'>
             <div className='grid gap-[16px]'>
-               <div className="flex items-center gap-[32px]">
-                  <img 
-                     src={review.image} 
-                     alt={review.name} 
-                     className="w-[100px] rounded-full" 
+               <div className="flex items-center gap-[20px]">
+                  <img
+                     src={image}
+                     alt={name}
+                     className="w-[100px] rounded-full"
                   />
-                  <div>
+                  <div className='grid ga'>
                      <h3 className="text-xl font-semibold">
-                        {review.name}
+                        {name}
                      </h3>
-                     <p className="text-gray-600">
-                        {review.location}
+                     <p className="text-[#181D15]">
+                        {location}
                      </p>
                   </div>
                </div>
-               <div className="flex items-center ">
+               <div className="flex gap-[10px] items-center ">
                   <div className="flex">
-                     {Array.from({ length: review.rating }, (_, index) => (
-                        <svg key={index} xmlns="http://www.w3.org/2000/svg"
-                           className="h-5 w-5 text-yellow-500 fill-current mr-1"
-                           viewBox="0 0 20 20" fill="currentColor">
-                           <path fillRule="evenodd"
-                              d="M10 0l2.5 6.5L20 7l-5 5 1.5 6L10 17l-5.5 3 1.5-6-5-5 7.5-0.5L10 0z"
-                              clipRule="evenodd"
-                           />
-                        </svg>
-                     ))}
+                     {Array.from({ length: rating }, (_, index) => (
+                        <svg
+                        key={index}
+                        xmlns="http://www.w3.org/2000/svg"
+                        className="h-5 w-5 text-gray-300 fill-slate-400 stroke-current  mr-1"
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                          strokeWidth="2"
+                          d="M12 2 l 2 7 l 7 1 l -5 4 l 2 7 l -7 -5 l -7 5 l 2 -7 l -5 -4 l 7 -1 z"
+                        />
+                      </svg>))
+                      }
                   </div>
-                  <p className="text-gray-600">
-                     {review.date}
+                  <p className="text-[#181D15]">
+                     {date}
                   </p>
                </div>
-               <p className="text-gray-800">
-                  {review.comment}
+               <p className="text-[#181D15] font-RobotoFlex text-[14px]">
+                  {comment}
                </p>
             </div>
-            <img 
-               src="/icons/airbnb.svg" 
+            <img
+               src="/icons/airbnb.svg"
                alt="Airbnb"
                className='w-[80px] h-[30px]'
             />

@@ -1,39 +1,22 @@
 import CardGeneral from "../components/card/CardGeneral"
-import CardComentarios from "../components/card/CardComentarios"
 import SwiperHero from "../components/swipers/SwiperHero"
 import CardVideo from "../components/card/CardVideo";
 import { useMediaQuery } from "react-responsive";
+import SwiperComentarios from "../components/swipers/SwiperComentarios";
 
 const Main = () => {
-    const reviews = [
-        {
-            id: 1,
-            name: 'Ronald',
-            rating: 5,
-            comment: 'Buen sitio para pasar en familia. Cero nullas y en tranquilidad.',
-            location: '3 años en Airbnb',
-            date: 'julio de 2023',
-            image: '/reseñas/ronald.png'
-        },
-    ];
+
     const isSm = useMediaQuery({ query: '(min-width: 720px)' })
 
 
     return (
-        <div className="bg-WhiteA">
-
+        <div className="bg-WhiteA  pt-[50px] sm:pt-[88px] lg:pt-[100px]">
             <section id="Hero">
-                <div className="containerGeneral">
-                    <SwiperHero/>
-                </div>
+                <SwiperHero />
             </section>
 
             <section id="Comentarios">
-                <div className="containerGeneral">
-                    {reviews.map(review => (
-                        <CardComentarios key={review.id} review={review} />
-                    ))}
-                </div>
+                <SwiperComentarios />
             </section>
 
             <section id="Razones">
@@ -78,10 +61,6 @@ const Main = () => {
                                 <CardVideo
                                     link="https://www.youtube.com/embed/NCcFUi2Q5bQ"
                                     title="Casa Santorini 2024"
-                                />
-                                <CardVideo
-                                    link=""
-                                    title=""
                                 />
                             </div>
                         </div>
