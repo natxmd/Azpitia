@@ -12,20 +12,20 @@ interface props {
 const CardComentarios: React.FC<props> = ({ name, rating, comment, location, date, image }) => {
 
    return (
-      <div className="bg-white rounded-[12px] shadow-md  max-w-[344px] w-full h-[360px] pt-[30px] px-[32px] pb-[20px]">
+      <div className="bg-white rounded-[12px] shadow-md max-w-[344px] w-full h-[344px] pt-[30px] px-[16px] sm:px-[32px] pb-[20px]">
          <div className='flex flex-col justify-between h-full'>
             <div className='grid gap-[16px]'>
                <div className="flex items-center gap-[20px]">
                   <img
                      src={image}
                      alt={name}
-                     className="w-[100px] rounded-full"
+                     className="w-[60px] sm:w-[100px] rounded-full"
                   />
                   <div className='grid font-RobotoFlex'>
-                     <h3 className="text-xl font-semibold">
+                     <h3 className="text-[16px] sm:text-[20px] font-bold">
                         {name}
                      </h3>
-                     <p className="text-[#181D15] font-RobotoFlex">
+                     <p className="text-[#181D15] font-RobotoFlex font-medium text-[14px]">
                         {location}
                      </p>
                   </div>
@@ -48,11 +48,11 @@ const CardComentarios: React.FC<props> = ({ name, rating, comment, location, dat
                       </svg>))
                       }
                   </div>
-                  <p className="text-[#181D15]">
+                  <p className="text-[#181D15] text-[14px] sm:text-[16px]">
                      {date}
                   </p>
                </div>
-               <p className="text-[#181D15] font-RobotoFlex text-[14px]">
+               <p className="text-[#181D15] font-RobotoFlex font-normal text-[12px] sm:text-[14px]">
                   {comment}
                </p>
             </div>

@@ -13,16 +13,11 @@ export default function SwiperComentarios() {
                 breakpoints={{
                     270: {
                         slidesPerView: 1,
-                        spaceBetween: 10,
-                        centeredSlides: true
-                    },
-                    360: {
-                        slidesPerView: 0.95,
                         spaceBetween: 20,
                         centeredSlides: true
                     },
-                    400: {
-                        slidesPerView: 1.05,
+                    360: {
+                        slidesPerView: 1.5,
                         spaceBetween: 20,
                         centeredSlides: true
                     },
@@ -30,18 +25,28 @@ export default function SwiperComentarios() {
                         slidesPerView: 1.3,
                         centeredSlides: true
                     },
-                    640: {
+                    600: {
                         slidesPerView: 1.6,
                         centeredSlides: true
                     },
-                    800: {
+                    700: {
                         slidesPerView: 1.9,
+                        centeredSlides: true
+                    },
+                    800: {
+                        slidesPerView: 2.3,
+                        centeredSlides: true
                     },
                     920: {
                         slidesPerView: 2.5,
+                        centeredSlides: true
                     },
                     1024: {
                         slidesPerView: 2.8,
+                        centeredSlides: true
+                    },
+                    1120: {
+                        slidesPerView: 3.2,
                         centeredSlides: true
                     },
                     1320: {
