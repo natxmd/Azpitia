@@ -1,13 +1,19 @@
+import { useMediaQuery } from "react-responsive";
+
 interface Props {
     hover: boolean
 }
 
 function Airbnb({ hover }: Props) {
+
+    const isSm = useMediaQuery({ query: '(min-width: 640px)' })
+    const size = isSm ? 35 : 20
+
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="35"
+            width={size}
+            height={size}
             fill="none"
             viewBox="0 0 32 35"
         >

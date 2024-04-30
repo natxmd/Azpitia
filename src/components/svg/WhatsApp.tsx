@@ -1,13 +1,20 @@
+import { useMediaQuery } from "react-responsive";
+
 interface Props {
     hover: boolean
 }
 
 function WhatsApp({ hover }: Props) {
+
+    const isSm = useMediaQuery({ query: '(min-width: 640px)' })
+    const size = isSm ? 35 : 20
+    
+    useMediaQuery
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="35"
-            height="35"
+            width={size}
+            height={size}
             fill="none"
             viewBox="0 0 35 35"
         >
