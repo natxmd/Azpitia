@@ -14,23 +14,23 @@ export default function SwiperHero() {
             className="containerGeneral">
             <SwiperSlide>
                <CardGeneral
-                  imageUrl="/razones/image1.png"
-                  title="desconéctate en familia"
-                  description="Salir de el ruido de la ciudad es la mejor forma de recargar energías"
+                  imageUrl="/hero/img1.png"
+                  title="celebrando el día de la madre"
+                  description="Porque no hay mejor momento para reunir a la familia"
                />
             </SwiperSlide>
             <SwiperSlide>
                <CardGeneral
-                  imageUrl="/razones/image2.png"
-                  title="desconéctate en familia"
-                  description="Salir de el ruido de la ciudad es la mejor forma de recargar energías"
+                  imageUrl="/hero/img2.png"
+                  title="pet friendly"
+                  description="Donde los peluditos son bienvenidos"
                />
             </SwiperSlide>
             <SwiperSlide>
                <CardGeneral
-                  imageUrl="/razones/image3.png"
-                  title="desconéctate en familia"
-                  description="Salir de el ruido de la ciudad es la mejor forma de recargar energías"
+                  imageUrl="/hero/img3.png"
+                  title="HOME OFFICE"
+                  description="Hacer teletrabajo lejos de la ciudad y en la tranquilidad del campo"
                />
             </SwiperSlide>
          </Swiper>

@@ -28,7 +28,7 @@ const Main = () => {
                 <div
                     className="containerGeneral">
                     <h2>
-                        porqué ir a azpítia
+                        ¿Por qué ir a azpítia?
                     </h2>
                     <CardGeneral
                         imageUrl="/razones/image1.png"
