@@ -18,8 +18,8 @@ const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description 
             <div 
                 className="absolute  flex flex-col  items-center justify-center text-center
                 bottom-[21px] left-0 right-0  gap-[16px] sm:gap-[40px]">
-                <div className="grid gap-[16px]">
-                    <h1>
+                <div className="grid gap-[16px] !cursor-default">
+                    <h1 style={{ textShadow: '20px 80px 50px 20px rgba(100, 0, 0, 1)' }}>
                         {title}
                     </h1>
                     <p className="text-white font-semibold font-RobotoFlex text-[15px] px-[34px] leading-[19px] 

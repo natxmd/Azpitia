@@ -7,7 +7,7 @@ const Main = () => {
 
 
     return (
-        <div className="bg-WhiteA  pt-[50px] sm:pt-[0px]">
+        <div className="bg-WhiteA pt-[50px] sm:pt-[0px]">
             <section id="Hero">
                 <SwiperHero />
             </section>

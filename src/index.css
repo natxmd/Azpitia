@@ -2,18 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-h1 {
-    @apply text-[35px] font-bold font-[Cinzel] text-YellowA leading-[36px]  sm:text-[38px] sm:leading-[50px] md:px-0 lg:text-[50px]
-}
+@layer base {
+    h1 {
+        @apply text-[35px] font-bold font-[Cinzel] text-YellowA leading-[36px] sm:text-[38px] sm:leading-[50px] md:px-0 lg:text-[50px];
+        text-shadow: 0px 4px 14px rgba(0, 0, 0, 1);
+    }
 
-h2 {
-    @apply text-[35px] text-center font-bold font-[Cinzel] text-DarkGreenA leading-[36px] sm:text-[38px] sm:leading-[60px] lg:text-[50px]
+    h2 {
+        @apply font-[Cinzel] font-bold text-center text-DarkGreenA text-[35px] leading-[36px] sm:text-[38px] sm:leading-[60px] lg:text-[50px]
+    }
 }
 
 @layer utilities {
     .containerGeneral {
         @apply grid mx-auto w-[94%] max-w-[1394px] xl:w-full items-center 
-        py-[19px] gap-[10px] sm:gap-[26px] md:gap-[40px] 
+        gap-[10px] sm:gap-[26px] md:gap-[40px]
+        py-[20px] sm:py-[32px] md:py-[40px]
     }
 
 }

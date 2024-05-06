@@ -1,13 +1,15 @@
 import { useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function Tiktok() {
     const [hover, setHover] = useState(false)
+    const isMd = useMediaQuery({ maxWidth: "768px" });
     return (
         <a target="_blank" href="">
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width="61"
-                height="62"
+                width={isMd ? "42" : "60"}
+                height={isMd ? "42" : "60"}
                 fill="none"
                 viewBox="0 0 61 62"
                 onMouseEnter={() => setHover(true)}
