@@ -1,29 +1,33 @@
+import { useState } from "react";
+import Airbnb from "../svg/Airbnb";
+
 interface Props {
     text: string;
-    icon: React.ReactNode
-    hover: boolean
-    setHover: (hover: boolean) => void
+    link: string;
 }
 
-const BtnFooter = ({ text, icon, hover, setHover }: Props) => {
+const BtnFooter = ({ text, link }: Props) => {
+    const [hover, setHover] = useState(false)
     return (
-        <button
-            onMouseEnter={() => setHover(true)}
-            onMouseLeave={() => setHover(false)}
-            className={`flex items-center justify-center gap-[10px] px-[10px]
-            border-[1px] rounded-[16px] w-full max-w-[460px] mx-auto
-            transition-all duration-[0.3s] ease-linear
-            h-[32px] sm:h-[52px] lg:h-[74px]
-            ${hover ? "border-LightGreenA text-LightGreenA" : "border-YellowAFooter text-YellowAFooter"}`}>
-            <p 
-                className="font-[Jost] text-center leading-normal
-                text-[12px] text-medium sm:text-[15px] sm:text-bold lg:text-[20px]">
-                {text}
-            </p>
-            <span>
-                {icon}
-            </span>
-        </button>
+        <a target="_blank" href={link} className="">
+            <button
+                onMouseEnter={() => setHover(true)}
+                onMouseLeave={() => setHover(false)}
+                className={`flex items-center justify-center gap-[10px]
+                border-[2px] rounded-[16px] px-[22px] mx-auto
+                transition-all duration-[0.3s] ease-linear
+                h-[32px] sm:h-[52px] lg:h-[74px] sm:rounded-[66px]
+                ${hover ? "border-LightGreenA text-LightGreenA" : "border-YellowAFooter text-YellowAFooter"}`}>
+                <p
+                    className="font-[Jost] text-center font-semibold
+                    text-[12px] text-medium sm:text-[16px] sm:text-bold xl:text-[20px]">
+                    {text}
+                </p>
+                <span>
+                    <Airbnb hover={hover} />
+                </span>
+            </button>
+        </a>
     )
 }
 

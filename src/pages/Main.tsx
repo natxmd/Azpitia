@@ -31,21 +31,25 @@ const Main = () => {
                         ¿Por qué ir a azpítia?
                     </h2>
                     <CardGeneral
+                        link="https://wa.link/i6ngbh"
                         imageUrl="/razones/image1.png"
                         title="desconéctate en familia"
                         description="Salir de el ruido de la ciudad es la mejor forma de recargar energías"
                     />
                     <CardGeneral
+                        link="https://wa.link/x4fgog"
                         imageUrl="/razones/image2.png"
                         title="Descuento de el próximo mes"
                         description="Separa tu fin de semana en un mes en adelante  y obtén 10% DSCTO"
                     />
                     <CardGeneral
+                        link="https://wa.link/snmecb"
                         imageUrl="/razones/image3.png"
                         title="full day con amigos"
                         description="Un día para conectar con la naturaleza y desconectar del estrés de la ciudad"
                     />
                     <CardGeneral
+                        link="https://wa.link/50cqbo"
                         imageUrl="/razones/image4.png"
                         title="promoción parejas"
                         description="Separa un fin de semana para ir en pareja a un precio exclusivo."

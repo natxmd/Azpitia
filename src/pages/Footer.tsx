@@ -1,37 +1,30 @@
-import { useState } from "react"
 import BtnFooter from "../components/buttons/BtnFooter"
-import Airbnb from "../components/svg/Airbnb"
 import Facebook from "../components/svg/Facebook"
 import Instagram from "../components/svg/Instagram"
 import Tiktok from "../components/svg/Tiktok"
-import WhatsApp from "../components/svg/WhatsApp"
 
 const Footer = () => {
-    const [hoverWsp, setHoverWsp] = useState(false)
-    const [hoverAir, setHoverAir] = useState(false)
     return (
         <footer className="bg-DarkGreenA">
             <div className="mx-auto w-[90%] max-w-[1184px] xl:w-full">
                 <div 
                     className="py-[48px] grid justify-items-center items-center place-content-center
-                    gap-[20px] 
-                    md:flex md:justify-between">
+                    gap-[32px]
+                    lg:flex lg:justify-between">
                     <img
                         alt="Logo Footer"
                         src="/icons/logoFooter.svg"
                         className="w-[118px] sm:w-[125px] lg:w-[154px]"
                     />
                     <div
-                        className="grid gap-[16px] sm:gap-[20px]">
+                        className="grid gap-[14px] sm:gap-[20px] sm:flex">
                         <BtnFooter
-                            hover={hoverWsp} setHover={setHoverWsp}
-                            text="QUIERO HABLAR CON ALGUIEN"
-                            icon={<WhatsApp hover={hoverWsp} />}
+                            text="CASA MURAL"
+                            link="https://es-l.airbnb.com/rooms/40180449?guests=1&adults=1&s=67&unique_share_id=7b9d7992-7631-422c-98d8-c14496223de4"
                         />
                         <BtnFooter
-                            hover={hoverAir} setHover={setHoverAir}
-                            text="QUIERO SEPARAR POR AIRBNB"
-                            icon={<Airbnb hover={hoverAir} />}
+                            text="CASA SANTORINI"
+                            link="https://es-l.airbnb.com/rooms/558908938968796650?guests=1&adults=1&s=67&unique_share_id=587fdc0f-985d-40ae-9e91-6b72dc30a5b2"
                         />
                     </div>
                     <div

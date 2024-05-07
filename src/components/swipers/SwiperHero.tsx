@@ -14,6 +14,7 @@ export default function SwiperHero() {
             className="containerGeneral">
             <SwiperSlide>
                <CardGeneral
+                  link='https://wa.link/zpkxvp'
                   imageUrl="/hero/img1.png"
                   title="celebrando el día de la madre"
                   description="Porque no hay mejor momento para reunir a la familia"
@@ -21,6 +22,7 @@ export default function SwiperHero() {
             </SwiperSlide>
             <SwiperSlide>
                <CardGeneral
+                  link='https://wa.link/k2cdaz'
                   imageUrl="/hero/img2.png"
                   title="pet friendly"
                   description="Donde los peluditos son bienvenidos"
@@ -28,6 +30,7 @@ export default function SwiperHero() {
             </SwiperSlide>
             <SwiperSlide>
                <CardGeneral
+                  link='https://wa.link/1pc2vn'
                   imageUrl="/hero/img3.png"
                   title="HOME OFFICE"
                   description="Hacer teletrabajo lejos de la ciudad y en la tranquilidad del campo"

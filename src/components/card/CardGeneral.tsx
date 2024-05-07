@@ -1,12 +1,13 @@
 import BtnGO from "../buttons/BtnGo";
 
-interface CardGeneralProps {
+interface props {
     imageUrl: string;
     title: string;
     description: string;
+    link: string
 }
 
-const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description }) => {
+const CardGeneral = ({ imageUrl, title, description, link }: props) => {
     return (
         <div className="h-[500px]  relative">
             <div
@@ -19,7 +20,7 @@ const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description 
                 className="absolute  flex flex-col  items-center justify-center text-center
                 bottom-[21px] left-0 right-0  gap-[16px] sm:gap-[40px]">
                 <div className="grid gap-[16px] !cursor-default">
-                    <h1 style={{ textShadow: '20px 80px 50px 20px rgba(100, 0, 0, 1)' }}>
+                    <h1>
                         {title}
                     </h1>
                     <p className="text-white font-semibold font-RobotoFlex text-[15px] px-[34px] leading-[19px] 
@@ -28,7 +29,7 @@ const CardGeneral: React.FC<CardGeneralProps> = ({ imageUrl, title, description 
                         {description}
                     </p>
                 </div>
-                <BtnGO />
+                <BtnGO link={link}/>
             </div>
         </div>
 
