@@ -2,7 +2,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import CardGeneral from '../card/CardGeneral';
-import { Pagination } from 'swiper/modules';
 
 export default function SwiperHero() {
 
@@ -10,9 +9,7 @@ export default function SwiperHero() {
       <>
          <Swiper
             spaceBetween={40}
-            pagination={true}
             loop={true}
-            modules={[Pagination]}
             className="containerGeneral">
             <SwiperSlide>
                <CardGeneral
