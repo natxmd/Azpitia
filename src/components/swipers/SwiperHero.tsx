@@ -2,15 +2,23 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import CardGeneral from '../card/CardGeneral';
+import { Pagination } from 'swiper/modules';
 
 export default function SwiperHero() {
-   
+
    return (
       <>
          <Swiper
-            slidesPerView={1}
-            spaceBetween={30}
+            spaceBetween={40}
+            style={{
+               '--swiper-pagination-color': "rgba(255, 255, 255, 0.8)",
+               "--swiper-pagination-bullet-inactive-color": "rgba(255, 255, 255, 0.8)",
+               "--swiper-pagination-bullet-size": "14px",
+               "--swiper-pagination-bullet-horizontal-gap": "6px",
+            }}
+            pagination={true}
             loop={true}
+            modules={[Pagination]}
             className="containerGeneral">
             <SwiperSlide>
                <CardGeneral

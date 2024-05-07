@@ -5,20 +5,21 @@ interface props {
     title: string;
     description: string;
     link: string
+    style?: string
 }
 
-const CardGeneral = ({ imageUrl, title, description, link }: props) => {
+const CardGeneral = ({ imageUrl, title, description, link, style }: props) => {
     return (
-        <div className="h-[500px]  relative">
+        <div className="h-[500px] relative mb-[-40px] rounded-2xl">
             <div
-                className="absolute inset-0 bg-cover bg-[60%] rounded-2xl"
+                className={`absolute inset-0 bg-cover bg-[60%] rounded-2xl ${style}`}
                 style={{backgroundImage: `url(${imageUrl})`}}
             >
             </div>
             <div className="absolute inset-0 bg-black opacity-30 rounded-2xl"></div>
             <div 
                 className="absolute  flex flex-col  items-center justify-center text-center
-                bottom-[21px] left-0 right-0  gap-[16px] sm:gap-[40px]">
+                bottom-[68px] sm:bottom-[55px] left-0 right-0  gap-[16px] sm:gap-[40px]">
                 <div className="grid gap-[16px] !cursor-default">
                     <h1>
                         {title}
