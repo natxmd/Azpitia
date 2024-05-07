@@ -15,9 +15,7 @@
 
 @layer utilities {
     .containerGeneral {
-        @apply grid mx-auto w-[94%] max-w-[1394px] xl:w-full items-center 
-        gap-[10px] sm:gap-[26px] md:gap-[40px]
-        py-[20px] sm:py-[32px] md:py-[40px]
+        @apply grid mx-auto w-[94%] max-w-[1394px] xl:w-full items-center gap-[10px] sm:gap-[26px] md:gap-[40px] py-[20px] sm:py-[32px] md:py-[40px]
     }
-
 }
+

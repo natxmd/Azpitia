@@ -10,12 +10,6 @@ export default function SwiperHero() {
       <>
          <Swiper
             spaceBetween={40}
-            style={{
-               '--swiper-pagination-color': "rgba(255, 255, 255, 0.8)",
-               "--swiper-pagination-bullet-inactive-color": "rgba(255, 255, 255, 0.8)",
-               "--swiper-pagination-bullet-size": "14px",
-               "--swiper-pagination-bullet-horizontal-gap": "6px",
-            }}
             pagination={true}
             loop={true}
             modules={[Pagination]}
