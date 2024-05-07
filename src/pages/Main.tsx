@@ -49,7 +49,7 @@ const Main = () => {
                         description="Un día para conectar con la naturaleza y desconectar del estrés de la ciudad"
                     />
                     <CardGeneral
-                        link="https://wa.link/50cqbo"
+                        link="https://wa.link/ftjvmb"
                         imageUrl="/razones/image4.png"
                         title="promoción parejas"
                         description="Separa un fin de semana para ir en pareja a un precio exclusivo."
